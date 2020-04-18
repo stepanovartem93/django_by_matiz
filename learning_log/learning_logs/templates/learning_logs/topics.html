@@ -1,0 +1,14 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+<p>Topics</p>
+<ul>
+    {% if topics %}
+        {% for topic in topics %}
+            <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
+        {% endfor %}            
+    {% else %}
+        <li>No topic have been added yet</li>
+    {% endif %}
+</ul>
+{% endblock %}
