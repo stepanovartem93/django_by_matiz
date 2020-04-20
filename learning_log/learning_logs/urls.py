@@ -9,5 +9,6 @@ urlpatterns = [
     path(r'topics/', views.topics, name='topics'),
     # Страница с подробной информацией по отдельной теме
     path(r'topics/(?P<topic_id>\d+)/', views.topic, name='topic'),
+    path(r'new_topics/', views.new_topic, name='new_topic'),
     
 ]
