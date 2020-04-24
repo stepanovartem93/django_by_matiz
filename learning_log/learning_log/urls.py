@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path(r'', include('learning_logs.urls', namespace='learning_logs')),
-    
+
+    # Аутентификация Django site (login, logut, password management)
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
