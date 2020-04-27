@@ -126,3 +126,5 @@ LOGIN_REDIRECT_URL = '/'
 
 # Регистрирует любые письма, отправленные на консоль (чтобы вы могли скопировать ссылку на сброс пароля с консоли)
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_URL = '/accounts/login'
