@@ -16,7 +16,7 @@ def index(request):
 @login_required
 def topics(request):
     """Выводит список тем"""
-    topics = Topic.objects.order_by('data_added')
+    topics = Topic.objects.filter(owner=request.user).order_by('data_added')
     context = {
         'topics':topics,
     }
