@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Сторонние приложения
+    'bootstrap4',
     # Мои приложения
     'learning_logs',
 ]
@@ -128,3 +130,8 @@ LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_URL = '/accounts/login'
+
+# Настройки django-bootstrap4
+BOOTSTRAP4 = {
+    'include_jqery':True,
+}
